@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+.sidebar ul li.active {
+    background-color: #aebd63;
+    color: white; 
+}
+
+
+body{
+    min-height: 100vh;
+    background-color: #212121;
+    overflow: hidden;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75px;
+    z-index: 1;
+    background: #D6E68A;
+    backdrop-filter: blur(25px);
+    overflow-x: hidden;
+    padding-top: 10px;
+    transition: 0.6s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar:hover{
+    width: 250px;
+    transition: 0.6s ea;
+
+}
+
+.sidebar ul{
+    position: relative;
+    height: 97vh;
+}
+
+.sidebar ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+
+.sidebar ul li:hover{
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.3s ease;
+}
+
+.sidebar ul li a{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar ul li .logo{
+    margin-bottom: 50px;
+}
+
+.sidebar ul li .logo .icon{
+    font-size: 28px;
+}
+
+.sidebar ul li .logo .text{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.sidebar ul li:last-child{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.sidebar ul li a .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 75px;
+    height: 60px;
+}
+
+.sidebar ul li .icon ion-icon{
+    font-size: 24px;
+}
+
+.sidebar ul li a .text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+}
+
+.password {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+}
+.password input {
+width: 50px;
+height: 60px;
+text-align: center;
+background-color: transparent;
+border: none;
+border-bottom: solid 2px #899752;
+font-size: 70px;
+color: #F6F8EE;
+outline: none;
+}
+
+
+h2{
+    margin-bottom: 2px;
+    padding: 5px;
+    font-size: 30px;
+    color: #F6F8EE;
+}
+
+
+.contenedorDerecho{
+
+    margin-left: 750px;
+    margin-top: -550px;
+    padding: 20px;
+    background-color: #303030;
+    border-radius: 8px;
+    width: 338px;
+    height: 550px;
+}
+
+.barra1{
+    width: 2px;
+    height: 500px;
+    background-color: #737373;
+    margin-left: 723px;
+    margin-top: -530px;
+
+}
+
+label{
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+input{
+    border: solid 2px #D6E68A ;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 7px;
+    width: 240px;
+}
+
+p{
+    text-align: center;
+    margin-right: 20px;
+    color: #F6F8EE;
+}
+
+#bottone1 {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 9px;
+    border-radius: 10px;
+    background: #d6e68a;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    width: 250px;
+    transition: 0.4s;
+    }
+
+    .barra{
+        width: 2px;
+        height: 450px;
+        background-color: #737373;
+        margin-left: 720px;
+        margin-top: -500px;
+    }
+    
+    #bottone1:hover {
+    box-shadow: 7px 5px 56px -8px #d6e68a;
+    }
+    
+    #bottone1:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -4px #d6e68a;
+    }
+
+    #bottone2 {
+    margin-top: 36px;
+    margin-left: 45px;
+    font-weight: bold;
+    padding: 9px;
+    border-radius: 10px;
+    background: #d6e68a;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    }
+
+    .bottone3 {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        margin-left: 70px;
+        font-weight: bold;
+        padding: 9px;
+        border-radius: 10px;
+        background: #d6e68a;
+        border: none;
+        font-family: inherit;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.4s;
+        }
+
+
+    
+    #bottone2:hover {
+    box-shadow: 7px 5px 56px -8px #d6e68a;
+    }
+    
+    #bottone2:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -4px #d6e68a;
+    }
+
+    .bottone3:hover {
+        box-shadow: 7px 5px 56px -8px #d6e68a;
+        }
+        
+        .bottone3:active {
+        transform: scale(0.97);
+        box-shadow: 7px 5px 56px -4px #d6e68a;
+        }
+    
+
+
+/* Código Inputs */
+
+.contenedorIzquierdo {
+    margin-left: 370px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #303030;
+    border-radius: 8px;
+    width: 510px;
+    height: 550px;
+    display: flex; 
+    flex-direction: column; 
+}
+
+input {
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: 2px solid #D6E68A;
+    border: 0;
+    width: 250px;
+    font-family: "Montserrat", sans-serif;
+    color: #F6F8EE;
+    background-color: #303030;
+    outline-offset: 3px;
+    padding: 6px 7.5px;
+    transition: all 0.2s ease;
+}
+
+    
+    input:hover {
+    background-color: #dbdbdb;
+    color: #121310;
+    }
+    
+    input:focus {
+    outline-offset: -6px;
+    background-color: #212121;
+    color: #F6F8EE;
+    }
+    
+    input:disabled {
+    outline: 2px solid #899752;
+    color: #d9d9d9;
+    }
+    
+    input:hover:disabled {
+    background-color: #a6a6a6;
+    color: #121310;
+    }
+
+    .material-checkbox {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        margin-left: 30px;
+        margin-top: 0px;
+        width: 250px;
+        color: #d6d6d6;
+        cursor: pointer;
+        }
+        
+        .material-checkbox input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        }
+        
+        .checkmark {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+        border: 2px solid #454B00;
+        border-radius: 4px;
+        transition: all 0.3s;
+        }
+        
+        .material-checkbox input[type="checkbox"]:checked ~ .checkmark {
+        background-color: #2F3300;
+        border-color: #454B00;
+        }
+        
+        .material-checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        width: 4px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        }
+        
+        .material-checkbox input[type="checkbox"]:focus ~ .checkmark {
+        box-shadow: 0 0 0 2px #dfec5065;
+        }
+        
+        .material-checkbox:hover input[type="checkbox"] ~ .checkmark {
+        border-color: #d6e68a;
+        }
+        
+        .material-checkbox input[type="checkbox"]:disabled ~ .checkmark {
+        opacity: 0.5;
+        cursor: not-allowed;
+        }
+        
+        .material-checkbox input[type="checkbox"]:disabled ~ .checkmark:hover {
+        border-color: #4d4d4d;
+        }
+
+/* Estilos para hacer el diseño responsive */
+
+/* Estilos para hacer el diseño responsive */
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px; /* Ancho fijo para la barra lateral en pantallas pequeñas */
+    }
+
+    .sidebar:hover {
+        width: 200px; /* Ancho al pasar el mouse en pantallas pequeñas */
+    }
+
+    .sidebar ul li .icon {
+        min-width: 60px; /* Ancho mínimo para los íconos en pantallas pequeñas */
+    }
+
+    .contenedorDerecho,
+    .contenedorIzquierdo {
+        margin-top: 30px; /* Margen superior para evitar superposición con la barra lateral */
+        margin-left: 70px; /* Reiniciar el margen izquierdo */
+        width: calc(100% - 20px); /* Ancho relativo para los contenedores */
+        max-width: 90vw; /* Ancho máximo para evitar que se desborde */
+        height: auto; /* Altura automática */
+    }
+
+    .barra1,
+    .barra {
+        display: none; /* Ocultar las barras verticales */
+    }
+
+    input {
+        width: calc(100% - 20px); /* Ancho relativo para los inputs */
+        max-width: 90vw; /* Ancho máximo para evitar que se desborde */
+    }
+
+    #bottone1,
+    #bottone2 {
+        width: calc(100% - 20px); /* Ancho relativo para los botones */
+        max-width: 90vw; /* Ancho máximo para evitar que se desborde */
+        margin-left: 0; /* Reiniciar el margen izquierdo */
+    }
+
+    .password {
+        flex-direction: column; /* Cambiar dirección de los elementos flexibles */
+    }
+
+    .password input {
+        width: 50px; /* Ancho fijo para los inputs de la contraseña */
+        height: 60px; /* Altura fija para los inputs de la contraseña */
+    }
+}

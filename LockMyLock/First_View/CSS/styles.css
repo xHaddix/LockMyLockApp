@@ -1,0 +1,186 @@
+body{
+    background-color: #212121;
+    font-family: sans-serif;
+}
+
+.contenedorSuperior{
+    margin: 40px auto;
+    text-align: center;
+}
+
+.parrafoSuperior{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.contenedorBotones{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn{
+    margin: 50px;
+    background-color: #D6E68A;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: ease 0.3s;
+}
+
+.btn:hover{
+    background-color: #899752;
+}
+
+/* Contenedor Inferior */
+.contenedorInferior {
+    margin: 90px auto;
+    width: 900px;
+}
+
+fieldset {
+    border: 4px solid #95AA61;
+    border-radius: 8%;
+    padding: 20px;
+    position: relative;
+}
+
+legend {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.texto {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.img-container {
+    flex-shrink: 0;
+}
+
+.imagenCerradura {
+    margin-top: 30px;
+    margin-right: 30px;
+    height: 320px;
+    width: 320px;
+    border-radius: 5%;
+}
+
+.informacionLink {
+    text-decoration: none;
+    color: #0CC0DF;
+    margin-left: 35px;
+}
+
+.Precio {
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #899752;
+    margin-left: 35px;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+li {
+    color: #A6A6A6;
+    margin: 10px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    display: block;
+    margin-top: 300px;
+    margin-right: 70px;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: transform 100ms;
+}
+
+.checkmark {
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    transition: transform 100ms;
+    animation: dislike_effect 400ms ease;
+}
+
+.container input:checked ~ .checkmark path {
+    fill: #FF5353;
+    stroke-width: 0;
+}
+
+.container input:checked ~ .checkmark {
+    animation: like_effect 400ms ease;
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+@keyframes like_effect {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes dislike_effect {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn__obtener {
+    font-weight: bold;
+    background-color: #D6E68A;
+    padding: 10px 30px;
+    margin-left: 180px;
+    color: #000;
+    border: none;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn__obtener:hover {
+    background-color: #899752;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appMovil</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="../PHP/register.php" method="POST">
+                <h1>Crear Cuenta</h1>
+                
+                <div class="form-control">
+                    <input type="text" name="username" required>
+                    <label>
+                    <span style="transition-delay:0ms">N</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">m</span><span style="transition-delay:150ms">b</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">e</span><span style="transition-delay:300ms"> </span><span style="transition-delay:350ms">c</span><span
+                    style="transition-delay:400ms">o</span><span
+                    style="transition-delay:450ms">m</span><span
+                    style="transition-delay:500ms">p</span><span
+                    style="transition-delay:500ms">l</span><span
+                    style="transition-delay:600ms">e</span><span
+                    style="transition-delay:650ms">t</span><span
+                    style="transition-delay:700ms">o</span>
+                    </label>
+                    </div>
+                    
+                    <div class="form-control">
+                    <input type="text" name="phoneNumberUser" required>
+                    <label>
+                    <span style="transition-delay:0ms">T</span><span style="transition-delay:50ms">e</span><span style="transition-delay:100ms">l</span><span style="transition-delay:150ms">é</span><span style="transition-delay:200ms">f</span><span style="transition-delay:250ms">o</span><span style="transition-delay:300ms">n</span><span style="transition-delay:350ms">o</span>
+                    </label>
+                    </div>               
+                    
+                    <div class="form-control">
+                    <input  type="email" name="email" required>
+                    <label>
+                    <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">r</span><span style="transition-delay:150ms">r</span><span style="transition-delay:200ms">e</span><span style="transition-delay:250ms">o</span><span style="transition-delay:300ms"> </span><span style="transition-delay:350ms">e</span><span
+                    style="transition-delay:400ms">l</span><span
+                    style="transition-delay:450ms">e</span><span
+                    style="transition-delay:500ms">c</span><span
+                    style="transition-delay:500ms">t</span><span
+                    style="transition-delay:600ms">r</span><span
+                    style="transition-delay:650ms">ó</span><span
+                    style="transition-delay:700ms">n</span><span
+                    style="transition-delay:750ms">i</span><span
+                    style="transition-delay:800ms">c</span><span
+                    style="transition-delay:850ms">o</span>
+                    </label>
+                    </div>   
+
+                    <div class="form-control">
+                        <input type="password" name="password" required>
+                        <label>
+                        <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">n</span><span style="transition-delay:150ms">t</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">s</span><span style="transition-delay:350ms">e</span><span
+                        style="transition-delay:400ms">ñ</span><span
+                        style="transition-delay:450ms">a</span>
+                        </label>
+                        </div>                
+                        <button class="bottone2" type="submit"><strong>Registrarse</strong></button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="../PHP/login.php" method="POST">
+                <h1>Iniciar Sesión</h1>
+                 <br> 
+                 <div class="form-control">
+                    <input  type="email" name="email" required>
+                    <label>
+                    <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">r</span><span style="transition-delay:150ms">r</span><span style="transition-delay:200ms">e</span><span style="transition-delay:250ms">o</span><span style="transition-delay:300ms"> </span><span style="transition-delay:350ms">e</span><span
+                    style="transition-delay:400ms">l</span><span
+                    style="transition-delay:450ms">e</span><span
+                    style="transition-delay:500ms">c</span><span
+                    style="transition-delay:500ms">t</span><span
+                    style="transition-delay:600ms">r</span><span
+                    style="transition-delay:650ms">ó</span><span
+                    style="transition-delay:700ms">n</span><span
+                    style="transition-delay:750ms">i</span><span
+                    style="transition-delay:800ms">c</span><span
+                    style="transition-delay:850ms">o</span>
+                    </label>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="password" name="password" required>
+                        <label>
+                        <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">n</span><span style="transition-delay:150ms">t</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">s</span><span style="transition-delay:350ms">e</span><span
+                        style="transition-delay:400ms">ñ</span><span
+                        style="transition-delay:450ms">a</span>
+                        </label>
+                        </div>   
+
+                           <a href="#">¿Olvidaste tu contraseña?</a>
+                           
+                <button type="submit" class="bottone1"><strong>Iniciar sesión</strong></button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle" >
+                <div class="toggle-panel toggle-left">
+                    <h1>¡Hola, Amig@!</h1>
+                    <p>Registrate con tus datos personales para acceder a todas las funcionalidades.</p>
+                    <button class="hidden bottone2" id="login"><strong>Iniciar sesión</strong></button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>¡Bienvenid@ de Vuelta!</h1>
+                    <p>Ingresa tus datos personales para acceder a todas las funcionalidades.</p>
+                    <button class="hidden bottone1" id="register"><strong>Registrarse</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
